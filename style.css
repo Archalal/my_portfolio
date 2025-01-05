@@ -1,0 +1,149 @@
+*{
+    padding: 0%;
+    margin: 0%;
+   
+}
+
+.navbar ul li{
+    letter-spacing: 2px;
+}
+
+#navbar1{
+    transition: .5s;
+}
+#navbar1:hover{
+    color: #8da242;
+   
+}
+.info{
+    display: flex;
+    align-items: center;
+    padding: 150px 9% 0;
+}
+.info p{
+    padding-top: 10px;
+    padding-bottom:10px ;
+
+}
+.button-whole a{
+    text-decoration: none;
+    padding: 10px 30px;
+    border:  2px solid  #228B22;
+    border-radius: 40px;
+    background-color: #228B22;
+    box-shadow: 0 0 4px #228B22;
+    color: black;
+    font-weight: 600;
+    transition: .5s;
+}
+.button-whole :hover{
+    background: transparent;
+    color:#8da242;
+    box-shadow: none;
+}
+
+.info h2 span {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 0.7px #228B22;
+    animation: displaytext 8s linear infinite;
+    animation-delay: calc(-2s * var(--i));
+}
+
+@keyframes displaytext {
+   
+    25%, 100% {
+        display: none;
+    }
+}
+.info h2 span::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid #228B22;
+    color: #228B22;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 2s linear infinite;
+}
+
+@keyframes fill-text {
+    0%, 10% {
+        width: 0;
+    }
+    70%, 100% {
+        width: 100%;
+    }
+}
+
+#details{
+    font-weight: 600;
+    font-size: 20px;
+    color:#228B22 ;
+    letter-spacing: 2px;
+    padding-top: 30px;
+   
+} 
+#container ,#container1, #container2,#container3 {
+    margin: 20px;
+    width: 250px; 
+    height: 6px; 
+    position: relative;
+    padding-left: 20px;
+}
+
+
+
+#row1 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px; 
+}
+#container4 ,#container5, #container6,#container7 {
+    margin: 20px;
+    width: 250px; 
+    height: 6px; 
+    position: relative;
+    padding-left: 20px;
+}
+
+
+
+#row2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px; 
+}
+
+.p1{
+   /* justify-items: center; */
+   text-align: justify;
+   letter-spacing: 2px;
+}
+#i1:hover{
+   transform: scale(1.1);
+  
+    
+}
+
+#service{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    gap: 10px;
+    margin: 20px;
+   
+}
+#col2{
+    border: 1px solid;
+    padding: 15px;
+    text-align: justify;
+   border-radius: 10px;
+   box-shadow: 0 0 10px #228B22;
+   transition: .5s;
+}
+#col2:hover{
+    transform: scale(1.03);
+}
